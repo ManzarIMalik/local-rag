@@ -1,35 +1,50 @@
 # README
 
-Created a Simple Local RAG application which aims to find references from PDF books stored in data. This app creates vectorstore and loads the related content using Ollama based SOTA LLM models.
-## Description
-
-The Reference Finder is a tool designed to help you find and manage references in your documents. Whether you are writing a research paper, a technical report, or any other document that requires citations, the Reference Finder can assist you in organizing and formatting your references.
+This Streamlit app allows users to chat with their documents using a conversational AI model. You can upload PDFs, DOCX, TXT, and MD files, or provide URLs, and the app will process the data for interactive Q&A. It integrates FAISS for efficient document retrieval and uses LLMs (like Ollama) for generating responses.
 
 ## Features
 
-- Easy reference management: Add, edit, and delete references with ease.
-- Citation formatting: Generate citations in various styles (APA, MLA, IEEE, etc.).
-- Search functionality: Quickly find specific references using keywords or filters.
-- Export options: Export your references in different formats (PDF, Word, etc.).
-- User-friendly interface: Intuitive and straightforward to use.
+- **Upload Documents**: Supports PDF, DOCX, TXT, and MD files.
+- **URL Support**: Load content from web pages.
+- **FAISS Indexing**: Efficient retrieval of document data.
+- **LLM Chat**: Ask questions about your documents and get AI-generated responses.
+- **Chat History**: View previous conversations.
+- **Manage Data**: Clear the vector store and chat history.
+- **Model Selection**: Choose from multiple LLMs.
 
-## Installation
+## Installation & Setup
 
-To install the Reference Finder, follow these steps:
+1. **Clone the repository and install dependencies**:
 
-1. Clone the repository: `git clone https://github.com/manzarimalik/reference-finder.git`
-2. Navigate to the project directory: `cd reference-finder`
-3. Install the dependencies: `pip install -r requirements.txt`
-4. Start the application: `streamlit run app.py`
+   ```bash
+   git clone https://github.com/your-repo/chat-with-your-data.git
+   cd chat-with-your-data
+   pip install -r requirements.txt
+   ```
+
+2. **Start the LLM server and run the app**:
+
+   ```bash
+   # Start the LLM server (e.g., Ollama)
+   ollama serve
+
+   # In a new terminal, run the Streamlit app
+   streamlit run app.py
+   ```
 
 ## Usage
 
-Once the application is running, you can access it through your web browser . From there, you can start managing your references and utilizing the various features of the Reference Finder.
+1. **Upload Files** or add **URLs** via the sidebar.
+2. **Ask Questions** about the content; the app will retrieve and display relevant information.
+3. **Clear History** and manage the vector store using sidebar options.
+
 
 ## Contributing
 
-We welcome contributions from the community! If you would like to contribute to the Reference Finder project.
+We welcome contributions from the community! If you would like to contribute to this project.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
