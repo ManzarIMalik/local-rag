@@ -1,4 +1,4 @@
-# README
+# Chat with Your Data 💬
 
 This Streamlit app allows users to chat with their documents using a conversational AI model. You can upload PDFs, DOCX, TXT, and MD files, or provide URLs, and the app will process the data for interactive Q&A. It integrates FAISS for efficient document retrieval and uses LLMs (like Ollama) for generating responses.
 
